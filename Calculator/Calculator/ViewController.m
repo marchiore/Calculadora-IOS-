@@ -54,7 +54,9 @@
 
 //Método referente a ação de limpar o Display (Label)
 - (IBAction)limpaDisplay:(UIButton *)sender {
-    self.display = 0;
+    self.display.text = @"0";
+    [_brain limpaStack];
+
 }
 - (IBAction)enterPressed {
     [self.brain pushOperand:[self.display.text doubleValue]];

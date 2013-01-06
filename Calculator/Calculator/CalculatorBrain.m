@@ -48,5 +48,8 @@
     
     return result;
 }
+-(void)limpaStack{
+    self.operandStack.removeAllObjects;
+}
 
 @end
